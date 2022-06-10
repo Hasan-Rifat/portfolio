@@ -9,19 +9,19 @@ export const project = [
   {
     img: img1,
     text: "Portfolio 1",
-    id: 1,
+    _id: 1,
     url: "https://assignment-10-b8408.web.app",
   },
   {
     img: img2,
     text: "Portfolio 2",
-    id: 2,
+    _id: 2,
     url: "https://hasan-rifat-assignment-9.netlify.app/",
   },
   {
     img: img3,
     text: "Portfolio 3",
-    id: 3,
+    _id: 3,
     url: "https://assignment-11-306c4.web.app/",
   },
 ];
@@ -52,7 +52,7 @@ const Portfolio = () => {
                     <h2 className="font-bold text-xl text-accent text-center py-4 my-2">
                       <small>
                         <button
-                          onClick={() => handleDetail(s.id)}
+                          onClick={() => handleDetail(s._id)}
                           className=" p-4 border-none hover:bg-[#161b22] bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
                           // href={s.url}
                         >
