@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to="/">My Portfolio</Link>
       </li>
       <li>
-        <Link to="/">Blog</Link>
+        <Link to="/blog">Blog</Link>
       </li>
       <li>
         <a href="https://form.jotform.com/221595024749461" target="blank">

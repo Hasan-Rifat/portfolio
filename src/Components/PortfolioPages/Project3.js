@@ -3,7 +3,7 @@ import img1 from "../../img/project3.png";
 
 const Project3 = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-48">
+    <div className="max-w-7xl mx-auto px-4 sm:py-48">
       <div class="flex px-5 md:flex-row flex-col items-center">
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
