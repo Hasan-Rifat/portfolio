@@ -1,30 +1,36 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import img1 from "../../img/1.png";
 import img2 from "../../img/2.png";
 import img3 from "../../img/3.png";
 
+export const project = [
+  {
+    img: img1,
+    text: "Portfolio 1",
+    id: 1,
+    url: "https://assignment-10-b8408.web.app",
+  },
+  {
+    img: img2,
+    text: "Portfolio 2",
+    id: 2,
+    url: "https://hasan-rifat-assignment-9.netlify.app/",
+  },
+  {
+    img: img3,
+    text: "Portfolio 3",
+    id: 3,
+    url: "https://assignment-11-306c4.web.app/",
+  },
+];
+
 const Portfolio = () => {
-  const project = [
-    {
-      img: img1,
-      text: "Portfolio 1",
-      id: 1,
-      url: "https://assignment-10-b8408.web.app",
-    },
-    {
-      img: img2,
-      text: "Portfolio 2",
-      id: 2,
-      url: "https://hasan-rifat-assignment-9.netlify.app/",
-    },
-    {
-      img: img3,
-      text: "Portfolio 3",
-      id: 3,
-      url: "https://assignment-11-306c4.web.app/",
-    },
-  ];
+  const navigate = useNavigate();
+  const handleDetail = (id) => {
+    navigate(`/details/${id}`);
+  };
   return (
     <section className="">
       <div className="max-w-7xl mx-auto px-4 py-24">
@@ -45,12 +51,13 @@ const Portfolio = () => {
                   <div className="text-center">
                     <h2 className="font-bold text-xl text-accent text-center py-4 my-2">
                       <small>
-                        <a
+                        <button
+                          onClick={() => handleDetail(s.id)}
                           className=" p-4 border-none hover:bg-[#161b22] bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
-                          href={s.url}
+                          // href={s.url}
                         >
                           {s.text}
-                        </a>
+                        </button>
                       </small>
                     </h2>
                   </div>

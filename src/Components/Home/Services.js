@@ -10,7 +10,6 @@ const Services = () => {
       heading: "React Application",
       text: "I can create any type of website for your business, portfolio, company, e-commerce store, blog etc. I provide unique, clean & awesome graphical design interface.",
       icon: <CgWebsite />,
-      color: "text-secondary",
     },
     {
       _id: 2,
@@ -25,7 +24,6 @@ const Services = () => {
       heading: "Fixing problems",
       text: "Website problem & bugs it’s a common problem for every website. Don’t worry about bugs and problems. I can fix any type of problems & bugs for any website.",
       icon: <MdSyncProblem />,
-      color: "text-secondary",
     },
   ];
   return (
