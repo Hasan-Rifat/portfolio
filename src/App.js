@@ -6,7 +6,7 @@ import Footer from "./Components/Shared/Footer";
 
 function App() {
   return (
-    <div className="">
+    <div className="gradient-bg-welcome ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

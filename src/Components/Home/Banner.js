@@ -4,14 +4,14 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <section class="py-24 bg-[#f8f9fc]">
+    <section class="py-24 gradient-bg-transactions">
       <div class="max-w-7xl mx-auto px-4 ">
         <div class="grid sm:grid-cols-1 md:grid-cols-2 items-center">
           <div class="">
-            <h1 class=" text-[48px] font-extrabold mb-4 text-secondary leading-[70px]">
+            <h1 class=" text-[48px] font-extrabold mb-4 text-white leading-[70px]">
               Hi, I’m <span class="text-primary"> Hasan Rifat, </span> <br />
               Full stack developer <br />
-              based in USA.
+              based in Bangladesh.
             </h1>
 
             <div class="">

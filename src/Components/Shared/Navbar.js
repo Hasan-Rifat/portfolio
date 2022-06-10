@@ -24,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <section className="shadow-lg sticky top-0 bg-white z-50">
+    <section className="shadow-lg sticky top-0 gradient-bg-transactions z-50">
       <div className="max-w-7xl mx-auto px-4 ">
         <div class="navbar ">
           <div class="navbar-start">
@@ -54,13 +54,13 @@ const Navbar = () => {
             </div>
             <Link
               to="/"
-              class="btn btn-ghost normal-case text-xl text-secondary font-bold"
+              class="btn btn-ghost normal-case text-xl text-white font-bold"
             >
               Hasan Rifat
             </Link>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal p-0 text-secondary font-bold">
+            <ul class="menu menu-horizontal p-0 text-white font-bold">
               {navLink}
             </ul>
           </div>

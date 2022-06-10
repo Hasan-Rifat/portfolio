@@ -26,19 +26,19 @@ const Portfolio = () => {
     },
   ];
   return (
-    <section className="bg-[#f8f9fc]">
+    <section className="">
       <div className="max-w-7xl mx-auto px-4 py-24">
         <>
-          <h1 class="sm:text-[36px] md:text-[48px] font-extrabold mb-4 text-secondary leading-[70px] text-center">
+          <h1 class="sm:text-[36px] md:text-[48px] font-extrabold mb-4 text-white leading-[70px] text-center">
             My <span class="text-primary"> Portfolio</span>
           </h1>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
             {project.map((s, index) => (
-              <div className=" shadow-2xl w-full">
+              <div className="rounded-2xl shadow-2xl w-full">
                 <div className="card-body justify-center">
                   <div className="avatar">
-                    <div className="w-40 mx-auto rounded">
+                    <div className="w-80 mx-auto rounded">
                       <img src={s.img} alt="" />
                     </div>
                   </div>
@@ -46,7 +46,7 @@ const Portfolio = () => {
                     <h2 className="font-bold text-xl text-accent text-center py-4 my-2">
                       <small>
                         <a
-                          className=" p-4 border-none hover:bg-secondary bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
+                          className=" p-4 border-none hover:bg-[#161b22] bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
                           href={s.url}
                         >
                           {s.text}

@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../img/banner.png";
+import banner from "../../img/my-bg 2.png";
 import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
 const AboutMe = () => {
   const details = [
@@ -36,10 +36,10 @@ const AboutMe = () => {
             <img class="rounded-3xl" alt="hero" src={banner} />
           </div>
           <div class="">
-            <h1 class="sm:text-[36px] md:text-[48px] font-extrabold mb-4 text-secondary leading-[70px]">
+            <h1 class="sm:text-[36px] md:text-[48px] font-extrabold mb-4 text-white leading-[70px]">
               About <span class="text-primary"> Me </span> <br />
             </h1>
-            <p class=" text-accent text-xl font-normal">
+            <p class=" text-white text-xl font-normal">
               I m a self-learner person. I am constantly gaining new skills in
               web development. By which I can give some good benefit to your
               Team. Besides, I am a hard-working and creative person
@@ -52,16 +52,16 @@ const AboutMe = () => {
                     <div class=" ">
                       <div class="">
                         <div class="bg-[#ffe8ef] w-1/4  rounded-full ">
-                          <span class="text-3xl text-primary text-center flex justify-center items-center p-4">
+                          <span class="text-4xl text-primary text-center flex justify-center items-center p-4">
                             {detail.icon}
                           </span>
                         </div>
                         <div class="">
-                          <h2 class="text-secondary text-xl font-bold py-2">
+                          <h2 class="text-white text-xl font-bold py-2">
                             {detail.heading}
                           </h2>
 
-                          <p class="text-accent">{detail.text}</p>
+                          <p class="text-white text-lg">{detail.text}</p>
                         </div>
                       </div>
                     </div>
