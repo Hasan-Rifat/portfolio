@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import img1 from "../../img/1.png";
 import img2 from "../../img/2.png";
@@ -8,29 +8,30 @@ import img3 from "../../img/3.png";
 export const project = [
   {
     img: img1,
-    text: "Portfolio 1",
+    text: "Portfolio",
     _id: 1,
-    url: "https://assignment-10-b8408.web.app",
+    url: "/project2",
   },
   {
     img: img2,
-    text: "Portfolio 2",
+    text: "Portfolio",
     _id: 2,
-    url: "https://hasan-rifat-assignment-9.netlify.app/",
+    url: "/project1",
   },
   {
     img: img3,
-    text: "Portfolio 3",
+    text: "Portfolio",
     _id: 3,
-    url: "https://assignment-11-306c4.web.app/",
+    url: "/project3",
   },
 ];
 
 const Portfolio = () => {
-  const navigate = useNavigate();
+  //! working when added backend
+  /* const navigate = useNavigate();
   const handleDetail = (id) => {
     navigate(`/details/${id}`);
-  };
+  }; */
   return (
     <section className="">
       <div className="max-w-7xl mx-auto px-4 py-24">
@@ -51,13 +52,18 @@ const Portfolio = () => {
                   <div className="text-center">
                     <h2 className="font-bold text-xl text-accent text-center py-4 my-2">
                       <small>
-                        <button
-                          onClick={() => handleDetail(s._id)}
+                        <Link to={s.url}>
+                          <button
+                            // onClick={() => handleDetail(s._id)} ///! add backend
+                            className=" p-4 border-none hover:bg-[#161b22] bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
+                          >
+                            {s.text}
+                          </button>
+                        </Link>
+                        {/* <button
+                          // onClick={() => handleDetail(s._id)} ///! add backend
                           className=" p-4 border-none hover:bg-[#161b22] bg-primary  text-white  font-semibold px-8 py-3  rounded-2xl shadow-2xl"
-                          // href={s.url}
-                        >
-                          {s.text}
-                        </button>
+                        ></button> */}
                       </small>
                     </h2>
                   </div>
